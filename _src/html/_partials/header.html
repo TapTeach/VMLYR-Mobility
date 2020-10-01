@@ -6,7 +6,7 @@
 <header class="layout-header {% if menuOnly or noHeader %}py-0{% endif %} {% if noHeader %}hide{% endif %} {% if noLogo %}py-2{% endif %}" data-header>
   <div class="container-xl">
     {% if menuInlineText %}
-      <div class="row justify-between items-center xs:hide sm:hide md:hide">
+      <div class="row justify-center items-center xs:hide sm:hide md:hide">
         <div class="col-variable">
           <a href="/" class="{% if noLogo %}hide{% endif %} inline"><img src="{{ options.pathImages }}/{{logo}}" alt="A logo of VMLY&amp;R." class="logo {% if menuOnly %}hide{% endif %}"></a>
         </div>
@@ -24,7 +24,7 @@
       </div>
     {% endif %}
 
-    <a href="/" class="{% if noLogo %}hide{% endif %} {% if menuInlineText %}lg:hide xl:hide{% endif %}"><img src="{{ options.pathImages }}/{{logo}}" alt="A logo of VMLY&amp;R." class="logo {% if menuOnly %}hide{% endif %}"></a>
+    <a href="/" class="{% if noLogo %}hide{% endif %} {% if menuInlineText %}lg:hide xl:hide{% endif %}"><img src="{{ options.pathImages }}/{{logo}}" alt="A logo of VMLY&amp;R." class="logo {% if menuOnly %}hide{% endif %} mx-auto align-center"></a>
     <button type="button" class="hamburger hamburger--open {% if noMenu %}hide{% endif %} {% if menuInlineText %}lg:hide xl:hide{% endif %}" {% if menuOnly %}style="transform: none;"{% endif %} aria-label="Open menu" data-hamburger-open></button>
   </div>
 </header>

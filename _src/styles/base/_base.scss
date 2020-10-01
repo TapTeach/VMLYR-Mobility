@@ -11,7 +11,7 @@
 // CSS variables add color vars to files starting with layoutheaderbg
 :root {
   --outlineColor: #5db7a5;
-  --bodyFontColor: #07002d;
+  --bodyFontColor: #000;
   --bodyLinkColor: #00aeef;
   --bodyLinkHoverColor: #07002d;
   --bodyLinkColorLight: #00aeef;
@@ -31,10 +31,10 @@
   --contactLinkColor: #00aeef;
   --contactLinkHoverColor: #07002d;
   --modalCloseBtnBgColor: #00aeef;
-  --layoutHeaderBg: #07002d;
+  --layoutHeaderBg: #68215b;
   --hamburgerMenu: #fff;
   --menuClose: #fff;
-  --headerNavBg: #07002d;
+  --headerNavBg: #68215b;
   --headerNavBg2: 0, 178, 237;
   --menuInlineTextColor: #fff;
   --menuInlineTextColorHvr: #00aeef;
@@ -43,9 +43,9 @@
   --buttonLtFont: #fff;
   --buttonLtHvrBg: #fff;
   --buttonLtHvrFont: #07002d;
-  --buttonDrkBg: transparent;
-  --buttonDrkOutline: #07002d;
-  --buttonDrkFont: #07002d;
+  --buttonDrkBg: #240b36;
+  --buttonDrkOutline: #240b36;
+  --buttonDrkFont: #fff;
   --buttonDrkHvrBg: #07002d;
   --buttonDrkHvrFont: #fff;
   --buttonlessHvr: #07002d;
@@ -62,7 +62,7 @@
   --speedBumpBorderRght: 255, 255, 255;
   --speedBumpLtBg: #3fc2f3, #0db2f0;
   --speedBumpDkBg: #005392, #013270;
-  --footerBg: #07002d;
+  --footerBg: #68215b;
   --footerBgRecognition: #353939;
   --footerCopyColor: #fff;
 }
