@@ -17,8 +17,63 @@
 
 {% block content %}
   <article class="landing-home" id="top">
-    <section>
-      <div class="container-xl"></div>
+    <section class="vg-2 align-center">
+      <div class="container-xl">
+        <div class="cxGoal__mw vg-4 pt-2 bg-center bg-contain bg-no-repeat mx-auto mb-3" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/nwea-wppawards/images/cx-goal/bg-intro.png');">
+          <h1 class="type-base font-normal uppercase">CX Goal</h1>
+          <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/nwea-wppawards/images/cx-goal/handrawn-line.png" class="mb-2" alt="hand drawn purple line">
+          <p>NWEA, one of the largest global educational research and Pre-K through 12 assessment organizations, wanted to transform the organization by embedding vision in its process and reimagining its internal products to dramatically accelerate its time to market and create more engaging experiences for students, teachers, and parents.</p>
+        </div>
+        
+
+        <div class="row justify-center">
+          <div class="col-12 md:col-3 mb-3 md:mb-0">
+            <div>
+              <div class="cxGoal__icon mx-auto mb-2">
+                {% include "_components/figure.html" with {
+                  "picture": {
+                    "altText": "Eye icon",
+                    "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/nwea-wppawards/images/cx-goal/vision-eye-icon.png",
+                    "placeholderSize": "296 224",
+                    "class": ""
+                  }
+                } %}
+              </div>
+              <p>Embed vision into the product development process</p>
+            </div>
+          </div>
+          <div class="col-12 md:col-3 mb-3 md:mb-0">
+            <div>
+              <div class="cxGoal__icon mx-auto mb-2">
+                {% include "_components/figure.html" with {
+                  "picture": {
+                    "altText": "list icon",
+                    "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/nwea-wppawards/images/cx-goal/assessment-list-icon.png",
+                    "placeholderSize": "250 224",
+                    "class": ""
+                  }
+                } %}
+              </div>
+              <p>Reimagine assessment creation to accelerate time to market</p>
+            </div>
+          </div>
+          <div class="col-12 md:col-3 mb-3 md:mb-0">
+            <div>
+              <div class="cxGoal__icon mx-auto mb-2">
+                {% include "_components/figure.html" with {
+                  "picture": {
+                    "altText": "list icon",
+                    "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/nwea-wppawards/images/cx-goal/experiences-note-icon.png",
+                    "placeholderSize": "250 224",
+                    "class": ""
+                  }
+                } %}
+              </div>
+              <p>Create engaging experiences for the education ecosystem</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </article>
 {% endblock %}
