@@ -1,3 +1,5 @@
+{% set logo = headerLogo ?: 'logo.png' %}
+
 <footer class="layout-footer align-center">
   <div class="vg-3 bg-recognition {% if recognition != true %}hide{% endif %}" id="recognition">
     <div class="container-xl">
@@ -13,7 +15,13 @@
     </div>
   </div>
 
-  <div class="vg-2">
+  <div class="py-2">
+    <div class="container-xl">
+    <a href="/"><img src="{{ options.pathImages }}/{{logo}}" alt="A logo of VMLY&amp;R." class="logo mx-auto align-center"></a>
+    </div>
+  </div>
+
+  <div class="vg-2 hide">
     <div class="container-lg">
       <h5 class="font-normal mb-1">Thank you.</h5>
       <ul class="row row--gutter-wide justify-center list-reset social">

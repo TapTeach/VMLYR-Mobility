@@ -11,10 +11,10 @@
 
   {% if title %}
     <a href="{{url}}" {% if newWindow %}target="_blank"{% endif %} class="button {{ class }}">
-      <span class="button__label {% if type == false %}button__labelPr{% endif %}">{{title}}</span>
       {% if type %}
         <span class="button__icon">{{ iconography.icon(type, 'currentColor', size) }}</span>
       {% endif %}
+      <span class="button__label {% if type == false %}button__labelPr{% endif %}">{{title}}</span>
     </a>
   {% endif %}
 {% endmacro %}

@@ -17,7 +17,6 @@ $buttonHeight: rem(35px);
   font-size: rem(12px);
   font-weight: 500;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   line-height: 1;
   transition: color 350ms $cubic-in;
@@ -26,7 +25,7 @@ $buttonHeight: rem(35px);
 
   @include media('>=md') {
     // width: 100%;
-    font-size: rem(14px);
+    font-size: rem(12px);
   }
 
   &::before {
@@ -96,8 +95,7 @@ $buttonHeight: rem(35px);
 }
 
 .button__label {
-  padding-left: rem(20px);
-  padding-right: rem(15px);
+  padding-right: rem(20px);
   flex-grow: 1;
 }
 
@@ -106,12 +104,17 @@ $buttonHeight: rem(35px);
 }
 
 .button__icon {
-  padding-right: rem(20px);
+  padding-left: rem(20px);
+  padding-right: rem(10px);
   flex-grow: 1;
 }
 
 .button--round {
   border-radius: rem(40px);
+}
+
+.button--roundRectangle {
+  border-radius: rem(5px);
 }
 
 .buttonless {
