@@ -26,5 +26,10 @@
     font-family: $font-mono;
   }
 
+  // Mono Code
+  @if $family == 'robotoslab' {
+    font-family: $font-robotoslab;
+  }
+
   font-weight: $weight;
 }

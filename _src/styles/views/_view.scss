@@ -3,17 +3,52 @@
 // ================================
 
 .cxGoal__mw {
-  max-width: rem(550px);
+  max-width: 100%;
+
+  @include media('>=sm') {
+    max-width: rem(490px);
+  }
+
+  @include media('>=md') {
+    max-width: rem(600px);
+  }
 }
 
 .cxGoal__icon {
   max-width: rem(100px);
+  height: auto;
+}
+
+.cxGoal__iconText {
+  max-width: rem(225px);
+  margin: 0 auto;
+
+  @include media('>=md') {
+    max-width: rem(220px);
+  }
+}
+
+.box {
+  max-width: rem(240px);
+  margin: 0 auto;
+
+  @include media('>=lg') {
+    max-width: rem(3000px);
+  }
+}
+
+.box__img {
+  max-width: rem(55px);
 }
 
 .text__height {
   margin-bottom: rem(20px);
 
   @include media('>=md') {
-    min-height: rem(200px);
+    min-height: rem(180px);
+  }
+
+  @include media('>=lg') {
+    min-height: rem(180px);
   }
 }
