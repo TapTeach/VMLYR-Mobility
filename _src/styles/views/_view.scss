@@ -11,5 +11,9 @@
 }
 
 .text__height {
-  min-height: rem(200px);
+  margin-bottom: rem(20px);
+
+  @include media('>=md') {
+    min-height: rem(200px);
+  }
 }
