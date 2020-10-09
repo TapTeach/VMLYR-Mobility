@@ -11,7 +11,7 @@
 // CSS variables add color vars to files starting with layoutheaderbg
 :root {
   --outlineColor: #5db7a5;
-  --bodyFontColor: #07002d;
+  --bodyFontColor: #222;
   --bodyLinkColor: #00aeef;
   --bodyLinkHoverColor: #07002d;
   --bodyLinkColorLight: #00aeef;
@@ -31,7 +31,7 @@
   --contactLinkColor: #00aeef;
   --contactLinkHoverColor: #07002d;
   --modalCloseBtnBgColor: #00aeef;
-  --layoutHeaderBg: #07002d;
+  --layoutHeaderBg: #13284f;
   --hamburgerMenu: #fff;
   --menuClose: #fff;
   --headerNavBg: #07002d;
@@ -62,7 +62,7 @@
   --speedBumpBorderRght: 255, 255, 255;
   --speedBumpLtBg: #3fc2f3, #0db2f0;
   --speedBumpDkBg: #005392, #013270;
-  --footerBg: #07002d;
+  --footerBg: #222;
   --footerBgRecognition: #353939;
   --footerCopyColor: #fff;
 }
