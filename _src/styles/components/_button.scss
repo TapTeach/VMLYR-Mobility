@@ -9,10 +9,10 @@ $buttonHeight: rem(35px);
   align-items: center;
   justify-content: space-between;
   background-color: var(--buttonDrkBg);
-  border: 2px solid var(--buttonDrkOutline);
+  border: 1px solid var(--buttonDrkOutline);
   padding: rem(10px 0);
   color: var(--buttonDrkFont);
-  min-width: rem(150px);
+  min-width: rem(130px);
   min-height: $buttonHeight;
   font-size: rem(12px);
   font-weight: 500;
@@ -26,7 +26,7 @@ $buttonHeight: rem(35px);
 
   @include media('>=md') {
     // width: 100%;
-    font-size: rem(14px);
+    font-size: rem(10px);
   }
 
   &::before {

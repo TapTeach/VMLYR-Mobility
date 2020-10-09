@@ -3,9 +3,65 @@
 // ================================
 
 .intro__mw {
-  max-width: rem(560px);
+  max-width: rem(320px);
+
+  @include media('>=md') {
+    max-width: rem(450px);
+  }
+
+  @include media('>=lg') {
+    max-width: rem(530px);
+  }
 }
 
 .hr__mw {
   max-width: rem(100px);
+}
+
+.section__shiftUp {
+  @include media('>=md') {
+    margin-top: rem(-30px);
+  }
+
+  @include media('>=lg') {
+    margin-top: rem(-40px);
+  }
+}
+
+.business__img {
+  @include media('>=md') {
+    position: absolute;
+    top: -60px;
+  }
+}
+
+.opportunity__border {
+  border: 1px solid setcolor(blue);
+}
+
+.opportunity__heading {
+  margin-top: rem(-9px);
+}
+
+.opportunity__text {
+  @include media('>=md') {
+    max-width: rem(450px);
+    margin: 0 auto;
+  }
+}
+
+.content__mw {
+  @include media('>=md') {
+    max-width: rem(400px);
+  }
+}
+
+.experience__shiftUp {
+  @include media('>=md') {
+    margin-top: rem(-60px);
+  }
+}
+
+.footer__text {
+  margin-bottom: rem(5px);
 }

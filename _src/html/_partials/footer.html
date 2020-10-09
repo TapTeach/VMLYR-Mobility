@@ -1,3 +1,5 @@
+{% set logo = headerLogo ?: 'logo.png' %}
+
 <footer class="layout-footer align-center">
   <div class="vg-3 bg-recognition {% if recognition != true %}hide{% endif %}" id="recognition">
     <div class="container-xl">
@@ -13,10 +15,10 @@
     </div>
   </div>
 
-  <div class="vg-2">
-    <div class="container-lg">
-      <h5 class="font-normal mb-1">Thank you.</h5>
-      <ul class="row row--gutter-wide justify-center list-reset social">
+  <div class="vg-2 pb-3 align-left">
+    <div class="container-xl">
+      <h5 class="font-normal mb-2">Thank you.</h5>
+      <ul class="row row--gutter-wide justify-left list-reset social">
         <li class="col-variable"><a href="https://www.instagram.com/vmlyr/" class="block" target="_blank">{{ icon('social-instagram', 'white', 'sm') }}</a></li>
         <li class="col-variable"><a href="https://www.facebook.com/VMLYR/" class="block" target="_blank">{{ icon('social-facebook', 'white', 'sm') }}</a></li>
         <li class="col-variable"><a href="https://twitter.com/VMLYR" class="block" target="_blank">{{ icon('social-twitter', 'white', 'sm') }}</a></li>
@@ -25,19 +27,22 @@
     </div>
   </div>
 
-  <div class="pb-2">
-    <div class="container-lg">
-      <p class="type-xs">
+  <div>
+    <div class="container-xl mb-2">
+      <a href="/" class="{% if noLogo %}hide{% endif %} {% if menuInlineText %}lg:hide xl:hide{% endif %}"><img src="{{ options.pathImages }}/{{logo}}" alt="A logo of VMLY&amp;R." class="logo {% if menuOnly %}hide{% endif %}"></a>
+    </div>
+  </div>
+
+  <div class="pb-2 align-left">
+    <div class="container-xl">
+      <p class="type-xs footer__text">
         <span class="mr-1">A Member of WPP</span> 
         <span class="mr-1">|</span> 
-        <span class="mr-1">Copyright © 2020 VMLY&amp;R</span> 
-        <span class="mr-1">|</span> 
-        <span class="mr-1"><a href="https://www.vmlyr.com/privacy-policy" class="link underline-none" target="_blank">Privacy Policy</a></span> 
-        <span class="mr-1">|</span> 
-        <span class="mr-1"><a href="https://www.vmlyr.com/cookie-policy" class="link underline-none" target="_blank">Cookie Policy</a></span> 
-        <span class="mr-1">|</span> 
-        <a href="https://www.vmlyr.com/terms-and-conditions" class="link underline-none" target="_blank">Terms and Conditions</a>
+        <span>Copyright © 2020 VMLY&amp;R</span>        
       </p>
+      <p class="type-xs footer__text"><a href="https://www.vmlyr.com/privacy-policy" class="link underline-none" target="_blank">Privacy Policy</a></p>
+      <p class="type-xs footer__text"><span class="mr-1"><a href="https://www.vmlyr.com/cookie-policy" class="link underline-none" target="_blank">Cookie Policy</a></span></p>
+      <p class="type-xs"><a href="https://www.vmlyr.com/terms-and-conditions" class="link underline-none" target="_blank">Terms and Conditions</a></p>
     </div>
   </div>
 </footer>
