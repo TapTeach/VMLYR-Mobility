@@ -16,10 +16,10 @@
   </div>
 
   <div class="tns-controls" data-carousel-controls aria-label="Carousel Navigation" tabindex="0">
-    <button aria-controls="customize" tabindex="-1" data-controls="prev">
+    <button aria-controls="customize" tabindex="-1" data-controls="prev" class="{{buttonClass}}">
       {{ icon(iconLeft.name|default('chevron-left-thin'), iconLeft.color|default('white'), iconLeft.size|default('md')) }}
     </button>
-    <button aria-controls="customize" tabindex="-1" data-controls="next">
+    <button aria-controls="customize" tabindex="-1" data-controls="next" class="{{buttonClass}}">
       {{ icon(iconRight.name|default('chevron-right-thin'), iconRight.color|default('white'), iconRight.size|default('md')) }}
     </button>
   </div>

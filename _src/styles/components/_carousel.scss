@@ -99,12 +99,21 @@ $carouselButtonSize: rem(45px);
       margin-left: 1px;
     }
 
-    button {
+    .carouselButton__white {
       background-color: setcolor(white);
       padding: rem(10px);
 
       &:hover {
-        background-color: setcolor(gray, light);
+        background-color: setcolor(gray);
+      }
+    }
+
+    .carouselButton__blue {
+      background-color: setcolor(blue);
+      padding: rem(10px);
+
+      &:hover {
+        background-color: setcolor(blue, light);
       }
     }
 
@@ -113,7 +122,7 @@ $carouselButtonSize: rem(45px);
     }
 
     button:first-child {
-      margin-right: 20px;
+      margin-right: rem(10px);
     }
   }
 
