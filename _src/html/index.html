@@ -8,7 +8,7 @@
 {% set noHeader = false %}
 {% set menuOnly = false %}
 {% set menuInlineText = false %}
-{% set noMenu = true %}
+{% set noMenu = false %}
 {% set noLogo = false %}
 {% set recognition = false %}
 {% set headerMenu = global.menu.page %}
@@ -108,15 +108,83 @@
     </section>
 
     <section class="vg-2">
-      <div class="container-xl">
-        <p>carousel</p>
-      </div>
+      {% embed "_components/carousel.html" with {
+        "tnsOptions": {
+          autoHeight: true,
+          rewind: true,
+          controls: true,
+        },
+        "counter": {
+          "hide": true,
+          "backdrop": false,
+          "inverted": false
+        },
+        "controls": {
+          "fixed": true
+        },
+        "iconLeft": {
+          "name": "chev-left-blue",
+          "color": "blue",
+          "size": "sm"
+        },
+        "iconRight": {
+          "name": "chev-right-blue",
+          "color": "blue",
+          "size": "sm"
+        }
+      } %}
+        {% block carousel %}
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1516548734656-e5357f1f7b00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a1cf194c74c2282da638916b25b3020&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1531621403038-64ce9162b7fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=350d04bb987aa99440a89b0a7093016f&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1531732915018-de5e51b1ea18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d351690c1e924b9c9d809ad780c919a3&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+        {% endblock %}
+      {% endembed %}
     </section>
 
-    <section class="vg-2">
-      <div class="container-xl">
-        <p>carousel</p>
-      </div>
+    <section class="vg-2 bg-gray-light">
+      {% embed "_components/carousel.html" with {
+        "tnsOptions": {
+          autoHeight: true,
+          rewind: true,
+          controls: true,
+        },
+        "counter": {
+          "hide": true,
+          "backdrop": false,
+          "inverted": false
+        },
+        "controls": {
+          "fixed": true
+        },
+        "iconLeft": {
+          "name": "chev-left-blue",
+          "color": "blue",
+          "size": "sm"
+        },
+        "iconRight": {
+          "name": "chev-right-blue",
+          "color": "blue",
+          "size": "sm"
+        }
+      } %}
+        {% block carousel %}
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1516548734656-e5357f1f7b00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a1cf194c74c2282da638916b25b3020&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1531621403038-64ce9162b7fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=350d04bb987aa99440a89b0a7093016f&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+          <div class="carousel__slide">
+            <img src="https://images.unsplash.com/photo-1531732915018-de5e51b1ea18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d351690c1e924b9c9d809ad780c919a3&auto=format&fit=crop&w=1440&h=800&q=80" alt="">
+          </div>
+        {% endblock %}
+      {% endembed %}
     </section>
 
     <section class="vg-2 bg-gray">

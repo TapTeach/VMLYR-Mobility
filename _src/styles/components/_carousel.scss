@@ -90,17 +90,35 @@ $carouselButtonSize: rem(45px);
   .tns-controls {
     position: absolute;
     display: inline-flex;
-    justify-content: flex-start;
-    align-self: flex-start;
-    bottom: 0;
+    justify-content: flex-end;
+    align-self: flex-end;
+    bottom: -30px;
+    right: rem(110px);
 
     button + button {
       margin-left: 1px;
     }
+
+    button {
+      background-color: setcolor(white);
+      padding: rem(10px);
+
+      &:hover {
+        background-color: setcolor(gray, light);
+      }
+    }
+
+    svg {
+      display: block;
+    }
+
+    button:first-child {
+      margin-right: 20px;
+    }
   }
 
   .carouselCounter {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .tns-nav {
