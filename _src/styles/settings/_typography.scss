@@ -32,7 +32,7 @@ $type-sets: (
       line-height: 1.3
     ),
     lg: (
-      font-size: rem(41px)
+      font-size: rem(54px)
     )
   ),
   h2: (
@@ -44,8 +44,8 @@ $type-sets: (
       line-height: 1.28
     ),
     lg: (
-      font-size: rem(31px),
-      line-height: 1.28
+      font-size: rem(39px),
+      line-height: 1
     )
   ),
   h3: (
@@ -104,12 +104,12 @@ $type-sets: (
   ),
   sm: (
     base: (
-      font-size: 0.875em
+      font-size: rem(18px)
     )
   ),
   base: (
     base: (
-      font-size: 1em
+      font-size: rem(20px)
     )
   ),
   lg: (
@@ -119,7 +119,7 @@ $type-sets: (
   ),
   xl: (
     base: (
-      font-size: 1.25em
+      font-size: rem(31px)
     )
   )
 );

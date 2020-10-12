@@ -2,6 +2,14 @@
 // Views
 // ================================
 
+.intro__pt {
+  padding-top: rem(210px) !important;
+}
+
+.intro__pb {
+  padding-bottom: rem(150px) !important;
+}
+
 .intro__mw {
   max-width: rem(320px);
 
@@ -10,12 +18,12 @@
   }
 
   @include media('>=lg') {
-    max-width: rem(530px);
+    max-width: rem(680px);
   }
 }
 
 .hr__mw {
-  max-width: rem(80px);
+  max-width: rem(110px);
 }
 
 .section__shiftUp {
@@ -24,14 +32,26 @@
   }
 
   @include media('>=lg') {
-    margin-top: rem(-40px);
+    margin-top: rem(-90px);
   }
 }
 
 .business__img {
   @include media('>=md') {
     position: absolute;
-    top: -60px;
+    top: rem(-10px);
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: rem(500px);
+  }
+
+  @include media('>=lg') {
+    max-width: rem(600px);
+  }
+
+  @include media('>=xl') {
+    max-width: rem(700px);
   }
 }
 
@@ -40,25 +60,25 @@
 }
 
 .opportunity__heading {
-  margin-top: rem(-9px);
+  margin-top: rem(-16px);
 }
 
 .opportunity__text {
   @include media('>=md') {
-    max-width: rem(450px);
+    max-width: rem(750px);
     margin: 0 auto;
   }
 }
 
 .content__mw {
   @include media('>=md') {
-    max-width: rem(400px);
+    max-width: rem(440px);
   }
 }
 
 .experience__shiftUp {
   @include media('>=md') {
-    margin-top: rem(-60px);
+    margin-top: rem(-100px);
   }
 }
 

@@ -122,7 +122,7 @@ html {
 body {
   background-color: setcolor(white);
   @include setfont(default);
-  font-size: rem(15px);
+  font-size: rem(14px) !important;
   line-height: 1.6;
   color: var(--bodyFontColor);
 }
@@ -199,9 +199,9 @@ a {
   border-width: 2px;
 }
 
-.hr__4 {
-  height: 4px;
-  border-width: 4px;
+.hr__6 {
+  height: 6px;
+  border-width: 6px;
 }
 
 .hr__cyan {
