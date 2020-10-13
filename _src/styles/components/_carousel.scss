@@ -102,12 +102,12 @@ $carouselButtonSize: rem(45px);
 
     @include media('>=lg') {
       bottom: rem(-30px);
-      right: rem(100px);
+      right: rem(80px);
     }
 
     @include media('>=xl') {
       bottom: -33px;
-      right: rem(100px);
+      right: rem(110px);
     }
 
     button + button {
