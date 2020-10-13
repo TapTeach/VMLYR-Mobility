@@ -12,12 +12,12 @@
 {% set noLogo = false %}
 {% set recognition = false %}
 {% set headerMenu = global.menu.page %}
-{% set headerLogo = 'logo-lockup.png' %}
+{% set headerLogo = 'logo-lockup.svg' %}
 {% set title = "VMLY&R | United Rentals Digital Toolbelt" %}
 
 {% block content %}
   <article class="landing-home" id="top">
-    <section class="intro__pb intro__pt bg-blue-dark bg-cover bg-left md:bg-right-bottom bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-intro.jpg');">
+    <section class="intro__pb intro__pt bg-blue-dark bg-cover bg-left md:bg-right-bottom bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-intro.png');">
       <div class="container-xl">
         <div class="intro__mw">
           <hr class="hr hr__blue hr__6 hr__mw mb-3">
@@ -34,7 +34,7 @@
         {% include "_components/figure.html" with {
           "picture": {
             "altText": "hand using the united rentals app on a mobile phone",
-            "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/hand-mobile-app.jpg",
+            "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/hand-mobile-app.png",
             "placeholderSize": "780 527",
             "class": "className"
           }
@@ -47,7 +47,7 @@
               {% include "_components/figure.html" with {
                 "picture": {
                   "altText": "hand using the united rentals app on a mobile phone",
-                  "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/hand-mobile-app.jpg",
+                  "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/hand-mobile-app.png",
                   "placeholderSize": "780 527",
                   "class": "className"
                 }
@@ -64,53 +64,7 @@
       </div>
     </section>
 
-    <style>
-      .box{
-        background-image: url("https://i.stack.imgur.com/N39wV.jpg");
-        width: 350px;
-        padding: 10px;
-    }
-    
-    /*begin first box*/
-    .first{
-        width: 300px;
-        height: 100px;
-        margin: 10px;
-        border-width: 0 2px 0 2px;
-        border-color: #333;
-        border-style: solid;
-        position: relative;
-    }
-    
-    .first span {
-        position: absolute;
-        display: flex;
-        right: 0;
-        left: 0;
-        align-items: center;
-    }
-    .first .foo{
-        top: -8px;
-    }
-    .first .bar{
-        bottom: -8.5px;
-    }
-    .first span:before{
-        margin-right: 15px;
-    }
-    .first span:after {
-        margin-left: 15px;
-    }
-    .first span:before , .first span:after {
-        content: ' ';
-        height: 2px;
-        background: #333;
-        display: block;
-        width: 50%;
-    }
-    </style>
-
-    <section class="vg-2 bg-blue-dark bg-cover bg-left md:bg-right bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.jpg');">
+    <section class="vg-2 bg-blue-dark bg-cover bg-left md:bg-right bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png');">
       <div class="container-xl">
         <div class="opportunity__border py-2">
           <p class="opportunity__heading type-sm uppercase font-bold color-white align-center"><span>Opportunity</span></p>
@@ -144,7 +98,7 @@
           {% include "_components/figure.html" with {
             "picture": {
               "altText": "Experience Pillars - 4 icons for rent, track, service, control",
-              "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/experience.jpg",
+              "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/experience.png",
               "placeholderSize": "1215 515",
               "class": "className"
             }
@@ -256,7 +210,7 @@
           {% include "_components/figure.html" with {
             "picture": {
               "altText": "Key metrics and benchmarks",
-              "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/key-metrics.jpg",
+              "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/key-metrics.png",
               "placeholderSize": "1215 474",
               "class": ""
             }
