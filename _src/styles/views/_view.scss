@@ -57,10 +57,30 @@
 
 .opportunity__border {
   border: 1px solid setcolor(blue);
+  border-width: 0 2px 2px;
 }
 
 .opportunity__heading {
-  margin-top: rem(-16px);
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: 0;
+  top: rem(-15px);
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: ' ';
+    height: 2px;
+    background: setcolor(blue);
+    display: block;
+    width: 50%;
+  }
+
+  span {
+    margin-right: rem(30px);
+    margin-left: rem(30px);
+  }
 }
 
 .opportunity__text {

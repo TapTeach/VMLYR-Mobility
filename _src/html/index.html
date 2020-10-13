@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="col-12 sm:col-8 md:col-5 md:col-offset-7">
-            <div class="md:pl-2">
+            <div class="md:pl-2 pt-3">
               <h2 class="type-h2 color-blue mb-2">Business<br class="xs:hide sm:hide"> Landscape</h2>
               <p class="type-base">Managing a fleet of construction equipment is the single biggest headache for site managers, general contractors and foremen in the industry. Down equipment, unused equipment and poorly managed fleets account for 30% profit loss in all construction jobs. For them, technology can’t be a major investment or risk, it must be an advantage that fits seamlessly into their daily lives.</p>
             </div>
@@ -64,10 +64,56 @@
       </div>
     </section>
 
+    <style>
+      .box{
+        background-image: url("https://i.stack.imgur.com/N39wV.jpg");
+        width: 350px;
+        padding: 10px;
+    }
+    
+    /*begin first box*/
+    .first{
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+        border-width: 0 2px 0 2px;
+        border-color: #333;
+        border-style: solid;
+        position: relative;
+    }
+    
+    .first span {
+        position: absolute;
+        display: flex;
+        right: 0;
+        left: 0;
+        align-items: center;
+    }
+    .first .foo{
+        top: -8px;
+    }
+    .first .bar{
+        bottom: -8.5px;
+    }
+    .first span:before{
+        margin-right: 15px;
+    }
+    .first span:after {
+        margin-left: 15px;
+    }
+    .first span:before , .first span:after {
+        content: ' ';
+        height: 2px;
+        background: #333;
+        display: block;
+        width: 50%;
+    }
+    </style>
+
     <section class="vg-2 bg-blue-dark bg-cover bg-left md:bg-right bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.jpg');">
       <div class="container-xl">
-        <div class="opportunity__border px-2">
-          <p class="opportunity__heading type-sm uppercase font-bold color-white align-center">Opportunity</p>
+        <div class="opportunity__border py-2">
+          <p class="opportunity__heading type-sm uppercase font-bold color-white align-center"><span>Opportunity</span></p>
           <p class="opportunity__text type-xl color-white font-bold align-center my-4">It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.</p>
         </div>
       </div>
