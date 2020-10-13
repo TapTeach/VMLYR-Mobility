@@ -2,6 +2,22 @@
 // Views
 // ================================
 
+.paddingTp-110 {
+  padding-top: rem(95px);
+}
+
+.paddingBt-110 {
+  padding-bottom: rem(95px);
+}
+
+.paddingBt-50 {
+  padding-bottom: rem(50px);
+}
+
+.paddingBt-120 {
+  padding-bottom: rem(120px);
+}
+
 .intro__pt {
   padding-top: rem(210px) !important;
 }
@@ -104,4 +120,12 @@
 
 .footer__text {
   margin-bottom: rem(5px);
+}
+
+.carousel__noMB {
+  .carousel {
+    .tns-outer {
+      margin-bottom: 0;
+    }
+  }
 }
