@@ -18,7 +18,7 @@
 {% block content %}
   <article class="landing-home" id="top">
     <section class="bg-gray-light paddingBt-110">
-      <div class="intro__pb intro__pt bg-cover bg-left md:bg-right-bottom bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-intro.png');">
+      <div class="intro__pb intro__pt bg-cover bg-right-bottom bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-intro.png');">
         <div class="container-xl">
           <div class="intro__mw">
             <hr class="hr hr__blue hr__6 hr__mw mb-3">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="vg-2 pb-0 section__shiftUp">
-        <div class="business__img">
+        <div class="business__img xs:hide sm:hide">
           {% include "_components/figure.html" with {
             "picture": {
               "altText": "hand using the united rentals app on a mobile phone",
@@ -41,8 +41,8 @@
           } %}
         </div>
         <div class="container-xl">
-          <div class="row">
-            <div class="col-12 sm:col-8 md:hide lg:hide xl:hide mb-3 md:mb-0">
+          <div class="row justify-center">
+            <div class="col-12 sm:col-10 md:hide lg:hide xl:hide mb-3 md:mb-0">
               <div class="business__img">
                 {% include "_components/figure.html" with {
                   "picture": {
@@ -54,10 +54,10 @@
                 } %}
               </div>
             </div>
-            <div class="col-12 sm:col-8 md:col-5 md:col-offset-7">
+            <div class="col-12 sm:col-12 md:col-5 md:col-offset-7">
               <div class="md:pl-2 pt-3">
                 <h2 class="type-h2 color-blue mb-3">Business<br class="xs:hide sm:hide"> Landscape</h2>
-                <p class="type-base">Managing a fleet of construction equipment is the single biggest headache for site managers, general contractors and foremen in the industry. Down equipment, unused equipment and poorly managed fleets account for 30% profit loss in all construction jobs. For them, technology can’t be a major investment or risk, it must be an advantage that fits seamlessly into their daily lives.</p>
+                <p class="typeSize-base">Managing a fleet of construction equipment is the single biggest headache for site managers, general contractors and foremen in the industry. Down equipment, unused equipment and poorly managed fleets account for 30% profit loss in all construction jobs. For them, technology can’t be a major investment or risk, it must be an advantage that fits seamlessly into their daily lives.</p>
               </div>
             </div>
           </div>
@@ -68,8 +68,8 @@
     <section class="paddingTp-110 paddingBt-110 bg-blue-dark bg-cover bg-left md:bg-right bg-no-repeat" style="background-image: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png');">
       <div class="container-xl">
         <div class="opportunity__border paddingTp-110 paddingBt-110">
-          <p class="opportunity__heading type-sm uppercase font-bold color-white align-center"><span>Opportunity</span></p>
-          <p class="opportunity__text type-xl color-white font-bold align-center">It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.</p>
+          <p class="opportunity__heading typeSize-base uppercase font-bold color-white align-center"><span>Opportunity</span></p>
+          <p class="opportunity__text typeSize-xl color-white font-bold align-center">It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.</p>
         </div>
       </div>
     </section>
@@ -81,13 +81,13 @@
             <div class="col-12 md:col-6 mb-3 md:mb-0">
               <div class="content__mw">
                 <h2 class="type-h2 color-blue mb-3">A Data-Fueled<br> Approach</h2>
-                <p class="type-base">As the world’s largest construction equipment rental company, United Rentals was already leveraging an abundance of equipment telematics data to monitor their fleets. So we put brains to work for brawn. In an industry used to handshakes, fax machines and brute force, we put all our data into a tool that people use everyday and transformed an analog fleet management workflow into a streamlined, data-fueled, digital choreography.</p>
+                <p class="typeSize-base">As the world’s largest construction equipment rental company, United Rentals was already leveraging an abundance of equipment telematics data to monitor their fleets. So we put brains to work for brawn. In an industry used to handshakes, fax machines and brute force, we put all our data into a tool that people use everyday and transformed an analog fleet management workflow into a streamlined, data-fueled, digital choreography.</p>
               </div>
             </div>
             <div class="col-12 md:col-6">
               <div class="content__mw md:ml-auto">
                 <h2 class="type-h2 color-blue mb-3">Building the Power<br> of Control</h2>
-                <p class="type-base">We made it easy to Rent, Track, Service, and Control massive equipment fleets, enabling an industry with razor thin margins to be more efficient and cost effective. We didn’t simply create an app, we designed an innovative, transformative brand asset that gave construction workers the power of control. By making data the most powerful tool on the tool belt, we enabled an industry to move tons of equipment with their fingertips.</p>
+                <p class="typeSize-base">We made it easy to Rent, Track, Service, and Control massive equipment fleets, enabling an industry with razor thin margins to be more efficient and cost effective. We didn’t simply create an app, we designed an innovative, transformative brand asset that gave construction workers the power of control. By making data the most powerful tool on the tool belt, we enabled an industry to move tons of equipment with their fingertips.</p>
               </div>
             </div>
           </div>
@@ -195,12 +195,12 @@
       <div class="paddingTp-110 paddingBt-110 bg-gray">
         <div class="container-xl">
           <h2 class="type-h2 color-blue mb-3">Additional Tools<br> and Resources</h2>
-          <p class="type-base mb-3">United Rentals has played a central role in helping to shape the on-demand sharing<br class="xs:hide sm:hide"> economy. Dig deeper to see how we’re helping them stay on top.</p>
+          <p class="typeSize-base mb-3">United Rentals has played a central role in helping to shape the on-demand sharing<br class="xs:hide sm:hide"> economy. Dig deeper to see how we’re helping them stay on top.</p>
           <div class="row row--gutter-wide paddingBt-50">
-            <div class="col-12 md:col-variable mb-2 md:mb-0">
+            <div class="col-12 sm:col-variable mb-2 md:mb-0">
               {{ button('Keynote', '', '', true, 'https://www.google.com', '') }}
             </div>
-            <div class="col-12 md:col-variable">
+            <div class="col-12 sm:col-variable">
               {{ button('Case Video', '', '', true, 'https://www.google.com', '') }}
             </div>
           </div>

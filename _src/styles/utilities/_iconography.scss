@@ -19,8 +19,13 @@
   }
 
   &[size='md'] {
-    width: rem(32px);
-    height: rem(32px);
+    width: rem(16px);
+    height: rem(16px);
+
+    @include media('>=md') {
+      width: rem(32px);
+      height: rem(32px);
+    }
   }
 
   &[size='lg'] {

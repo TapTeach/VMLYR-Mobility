@@ -18,8 +18,28 @@
   padding-bottom: rem(120px);
 }
 
+.typeSize-base {
+  font-size: rem(15px);
+
+  @include media('>=md') {
+    font-size: rem(20px);
+  }
+}
+
+.typeSize-xl {
+  font-size: rem(25px);
+
+  @include media('>=md') {
+    font-size: rem(31px);
+  }
+}
+
 .intro__pt {
-  padding-top: rem(210px) !important;
+  padding-top: rem(100px);
+
+  @include media('>=md') {
+    padding-top: rem(210px) !important;
+  }
 }
 
 .intro__pb {
@@ -74,6 +94,8 @@
 .opportunity__border {
   border: 1px solid setcolor(blue);
   border-width: 0 2px 2px;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
 }
 
 .opportunity__heading {
@@ -81,8 +103,12 @@
   display: flex;
   right: 0;
   left: 0;
-  top: rem(-15px);
+  top: rem(-10px);
   align-items: center;
+
+  @include media('>=md') {
+    top: rem(-15px);
+  }
 
   &::before,
   &::after {
@@ -108,6 +134,10 @@
 
 .content__mw {
   @include media('>=md') {
+    max-width: rem(350px);
+  }
+
+  @include media('>=lg') {
     max-width: rem(440px);
   }
 }

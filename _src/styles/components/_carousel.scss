@@ -92,8 +92,23 @@ $carouselButtonSize: rem(45px);
     display: inline-flex;
     justify-content: flex-end;
     align-self: flex-end;
-    bottom: -33px;
-    right: rem(110px);
+    bottom: rem(-15px);
+    right: rem(20px);
+
+    @include media('>=md') {
+      bottom: rem(-28px);
+      right: rem(40px);
+    }
+
+    @include media('>=lg') {
+      bottom: rem(-30px);
+      right: rem(100px);
+    }
+
+    @include media('>=xl') {
+      bottom: -33px;
+      right: rem(100px);
+    }
 
     button + button {
       margin-left: 1px;
@@ -101,7 +116,11 @@ $carouselButtonSize: rem(45px);
 
     .carouselButton__white {
       background-color: setcolor(white);
-      padding: rem(13px);
+      padding: rem(5px);
+
+      @include media('>=md') {
+        padding: rem(13px);
+      }
 
       &:hover {
         background-color: setcolor(gray);
@@ -110,7 +129,11 @@ $carouselButtonSize: rem(45px);
 
     .carouselButton__blue {
       background-color: setcolor(blue);
-      padding: rem(13px);
+      padding: rem(10px);
+
+      @include media('>=md') {
+        padding: rem(13px);
+      }
 
       &:hover {
         background-color: setcolor(blue, light);
