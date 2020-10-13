@@ -32,7 +32,7 @@
   }
 
   @include media('>=lg') {
-    margin-top: rem(-100px);
+    margin-top: rem(-50px);
   }
 }
 
@@ -98,7 +98,7 @@
 
 .experience__shiftUp {
   @include media('>=md') {
-    margin-top: rem(-100px);
+    margin-top: rem(-115px);
   }
 }
 
