@@ -116,7 +116,7 @@ $carouselButtonSize: rem(45px);
 
     .carouselButton__white {
       background-color: setcolor(white);
-      padding: rem(5px);
+      padding: rem(10px);
 
       @include media('>=md') {
         padding: rem(13px);
