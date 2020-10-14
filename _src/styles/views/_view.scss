@@ -94,81 +94,44 @@
 .quote__border {
   border: 1px solid setcolor(blue);
   border-width: 0 2px 2px;
+
+  &::before,
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 2px;
+    background: setcolor(blue);
+    display: block;
+    width: 30%;
+  }
+
+  @include media('>=md') {
+    &::before,
+    &::after {
+      width: 35%;
+    }
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.quote__padding {
   padding-left: rem(20px);
   padding-right: rem(20px);
 }
 
 .quote__heading {
   position: absolute;
-  display: flex;
-  right: 0;
-  left: 0;
-  top: -12px;
-  align-items: center;
-
-  @include media('>=sm') {
-    top: -13px;
-  }
-
-  @include media('>=md') {
-    top: -12px;
-  }
-
-  @include media('>=lg') {
-    top: -13px;
-  }
-
-  @include media('>=xl') {
-    top: -15px;
-  }
-
-  &::before,
-  &::after {
-    content: ' ';
-    height: 2px;
-    background: setcolor(blue);
-    display: block;
-    width: 50%;
-  }
-
-  span {
-    margin-right: rem(30px);
-    margin-left: rem(30px);
-  }
-}
-
-.quote__headingMark {
-  top: -25px;
-
-  @include media('>=sm') {
-    top: -27px;
-  }
-
-  @include media('>=md') {
-    top: -29px;
-  }
-
-  @include media('>=lg') {
-    top: -30px;
-  }
-
-  @include media('>=xl') {
-    top: -30px;
-  }
-
-  &::before,
-  &::after {
-    content: ' ';
-    height: 2px;
-    background: setcolor(blue);
-    display: block;
-    width: 50%;
-  }
-
-  span {
-    margin-right: rem(30px);
-    margin-left: rem(30px);
-  }
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .quote__text {
