@@ -2,6 +2,10 @@
 // Views
 // ================================
 
+.paddingBt-50 {
+  padding-bottom: rem(50px);
+}
+
 .paddingTp-110 {
   padding-top: rem(95px);
 }
@@ -10,16 +14,12 @@
   padding-bottom: rem(95px);
 }
 
-.paddingBt-50 {
-  padding-bottom: rem(50px);
-}
-
 .paddingBt-120 {
   padding-bottom: rem(120px);
 }
 
 .typeSize-base {
-  font-size: rem(15px);
+  font-size: rem(17px);
 
   @include media('>=md') {
     font-size: rem(20px);
@@ -91,14 +91,14 @@
   }
 }
 
-.opportunity__border {
+.quote__border {
   border: 1px solid setcolor(blue);
   border-width: 0 2px 2px;
   padding-left: rem(20px);
   padding-right: rem(20px);
 }
 
-.opportunity__heading {
+.quote__heading {
   position: absolute;
   display: flex;
   right: 0;
@@ -125,9 +125,50 @@
   }
 }
 
-.opportunity__text {
+.quote__headingMark {
+  top: -25px;
+
+  @include media('>=sm') {
+    top: -27px;
+  }
+
   @include media('>=md') {
-    max-width: rem(750px);
+    top: -29px;
+  }
+
+  @include media('>=lg') {
+    top: -30px;
+  }
+
+  @include media('>=xl') {
+    top: -30px;
+  }
+
+  &::before,
+  &::after {
+    content: ' ';
+    height: 2px;
+    background: setcolor(blue);
+    display: block;
+    width: 50%;
+  }
+
+  span {
+    margin-right: rem(30px);
+    margin-left: rem(30px);
+  }
+}
+
+.quote__text {
+  @include media('>=md') {
+    max-width: rem(780px);
+    margin: 0 auto;
+  }
+}
+
+.quote__textWide {
+  @include media('>=md') {
+    max-width: rem(850px);
     margin: 0 auto;
   }
 }

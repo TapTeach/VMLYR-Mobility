@@ -92,7 +92,7 @@ $carouselButtonSize: rem(45px);
     display: inline-flex;
     justify-content: flex-end;
     align-self: flex-end;
-    bottom: rem(-15px);
+    bottom: rem(-17px);
     right: rem(20px);
 
     @include media('>=md') {
