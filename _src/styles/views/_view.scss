@@ -184,3 +184,19 @@
     }
   }
 }
+
+.mobile__noYPadding {
+  @include media('<=sm') {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.mobile__noXPadding {
+  @include media('<=sm') {
+    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
