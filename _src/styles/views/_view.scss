@@ -103,11 +103,23 @@
   display: flex;
   right: 0;
   left: 0;
-  top: rem(-10px);
+  top: -12px;
   align-items: center;
 
+  @include media('>=sm') {
+    top: -13px;
+  }
+
   @include media('>=md') {
-    top: rem(-15px);
+    top: -12px;
+  }
+
+  @include media('>=lg') {
+    top: -13px;
+  }
+
+  @include media('>=xl') {
+    top: -15px;
   }
 
   &::before,
