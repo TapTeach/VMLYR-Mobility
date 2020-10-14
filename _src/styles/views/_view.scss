@@ -143,7 +143,7 @@
 
 .quote__textWide {
   @include media('>=md') {
-    max-width: rem(850px);
+    max-width: rem(900px);
     margin: 0 auto;
   }
 }
