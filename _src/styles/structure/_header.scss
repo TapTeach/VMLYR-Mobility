@@ -11,8 +11,8 @@ $menuLeftSpacing: 1.4em;
   left: 0;
   right: 0;
   width: 100%;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
   background-color: var(--layoutHeaderBg);
   z-index: 20;
 }
