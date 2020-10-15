@@ -141,25 +141,37 @@
         "buttonClass": "carouselButton__blue"
       } %}
         {% block carousel %}
-          <div class="carousel__slide">
-            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-1.png" alt="">
+          <div class="carousel__slide bg-white">
+            <div class="paddingBt-50 paddingTp-110">
+              <h2 class="typeSize-base uppercase align-center mb-3">APP Current State 2020</h2>
+              <hr class="hr hr__blue hr__6 hr__mw mx-auto mb-2">
+              <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-1.png" alt="">
+            </div>
           </div>
-          <div class="carousel__slide">
-            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-2.png" alt="">
+          <div class="carousel__slide bg-white">
+            <div class="paddingBt-50 paddingTp-110">
+              <h2 class="typeSize-base uppercase align-center mb-3">App Future State</h2>
+              <hr class="hr hr__blue hr__6 hr__mw mx-auto mb-2">
+              <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-2.png" alt="">
+            </div>
           </div>
-          <div class="carousel__slide">
-            <div>
-              {% include "_components/video.html" with {
-                "options": {
-                "autoplay": false,
-                  "controls": ["play", "play-large", "progress", "current-time", "fullscreen"]
-                },
-                "embed": {
-                  "id": "468576901",
-                  "provider": "vimeo"
-                }
-              } %}
-              
+          <div class="carousel__slide bg-white">
+            <div class="paddingBt-50 paddingTp-110">
+              <h2 class="typeSize-base uppercase align-center mb-3">AR Ordering</h2>
+              <hr class="hr hr__blue hr__6 hr__mw mx-auto mb-3">
+              <div>
+                {% include "_components/video.html" with {
+                  "options": {
+                  "autoplay": false,
+                    "controls": ["play", "play-large", "progress", "current-time", "fullscreen"]
+                  },
+                  "embed": {
+                    "id": "468576901",
+                    "provider": "vimeo"
+                  }
+                } %}
+                
+              </div>
             </div>
           </div>
         {% endblock %}
