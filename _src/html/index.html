@@ -14,6 +14,7 @@
 {% set headerMenu = global.menu.page %}
 {% set headerLogo = 'logo-lockup.svg' %}
 {% set title = "VMLY&R | United Rentals Digital Toolbelt" %}
+{% set enableLibraryPlyr = true %}
 
 {% block content %}
   <article class="landing-home" id="top">
@@ -141,13 +142,25 @@
       } %}
         {% block carousel %}
           <div class="carousel__slide">
-            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/app-current-state-slide1.png" alt="">
+            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-1.png" alt="">
           </div>
           <div class="carousel__slide">
-            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/app-current-state-slide1.png" alt="">
+            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/state-slide-2.png" alt="">
           </div>
           <div class="carousel__slide">
-            <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/app-current-state-slide1.png" alt="">
+            <div>
+              {% include "_components/video.html" with {
+                "options": {
+                "autoplay": false,
+                  "controls": ["play", "play-large", "progress", "current-time", "fullscreen"]
+                },
+                "embed": {
+                  "id": "468576901",
+                  "provider": "vimeo"
+                }
+              } %}
+              
+            </div>
           </div>
         {% endblock %}
       {% endembed %}
