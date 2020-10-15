@@ -189,6 +189,15 @@
   }
 }
 
+.slider__imgFocus {
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    transition: all 350ms 100ms $cubic-in;
+  }
+}
+
 .mobile__noYPadding {
   @include media('<=sm') {
     padding: 0 !important;
